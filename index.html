@@ -33,6 +33,14 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
 
+        .quote {
+            font-style: italic;
+            color: white;
+            font-size: 1.2em;
+            margin: 10px 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
         .nav-bar {
             background: rgba(255, 255, 255, 0.2);
             padding: 15px;
@@ -104,10 +112,42 @@
             transform: translateY(-5px);
         }
 
+        .cake-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            background: linear-gradient(45deg, #ffccff, #ffffcc);
+            padding: 15px;
+            border-radius: 10px;
+            color: #ff3399;
+            font-family: 'Comic Sans MS', cursive; /* כתב יפה ומשחקי */
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             color: white;
+        }
+
+        .sweet-ending {
+            background: linear-gradient(45deg, #ff66b2, #ffcc66);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
 
         @keyframes fadeIn {
@@ -132,7 +172,9 @@
         <header>
             <h1>Rinat's Cake Paradise 🎂🍰</h1>
             <p>Sweet Insights, Freshly Baked! ☕❤️</p>
+            <p class="quote">"כל עוגה היא סיפור קטן של שמחה!" – רינת</p>
         </header>
+        <img src="https://images.unsplash.com/photo-1559620192-0320d3a4f9bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Stunning Cake" class="cake-image">
 
         <nav class="nav-bar">
             <a href="#dashboard">Cake Dashboard</a>
@@ -144,18 +186,18 @@
         <section class="section" id="dashboard">
             <h2>Cake Dashboard 🍰</h2>
             <div class="tableau-container">
-                <div class='tableauPlaceholder' id='viz17430826034840' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz17430824284110' style='position: relative'>
                     <noscript>
-                        <a href='#'><img alt='Dashboard2 ' src='https://public.tableau.com/static/images/BO/BOOK1_17430826034840/Dashboard2/1_rss.png' style='border: none' /></a>
+                        <a href='#'><img alt='Dashboard2 ' src='https://public.tableau.com/static/images/Ca/Cakes_17430824284110/Dashboard2/1_rss.png' style='border: none' /></a>
                     </noscript>
                     <object class='tableauViz' style='display:none;'>
                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                         <param name='embed_code_version' value='3' /> 
                         <param name='site_root' value='' />
-                        <param name='name' value='BOOK1_17430826034840/Dashboard2' />
+                        <param name='name' value='Cakes_17430824284110/Dashboard2' />
                         <param name='tabs' value='no' />
                         <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https://public.tableau.com/static/images/BO/BOOK1_17430826034840/Dashboard2/1.png' /> 
+                        <param name='static_image' value='https://public.tableau.com/static/images/Ca/Cakes_17430824284110/Dashboard2/1.png' /> 
                         <param name='animate_transition' value='yes' />
                         <param name='display_static_image' value='yes' />
                         <param name='display_spinner' value='yes' />
@@ -166,7 +208,7 @@
                     </object>
                 </div>
                 <script type='text/javascript'>
-                    var divElement = document.getElementById('viz17430826034840');
+                    var divElement = document.getElementById('viz17430824284110');
                     var vizElement = divElement.getElementsByTagName('object')[0];
                     vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
                     var scriptElement = document.createElement('script');
@@ -192,20 +234,52 @@
                     <p>Sweetness 🍬</p>
                 </div>
             </div>
+            <p style="margin-top: 20px;">דברים מגניבים מהנתונים שלנו:</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>ציון הטעם הכי גבוה</h3>
+                    <p>דניש קינמון עם 7.6, עוגת גזר עם 7.5, ופאי תפוחים עם 7.4 – טעים בטירוף!</p>
+                </div>
+                <div class="stat-card">
+                    <h3>המאפה הכי משתלם</h3>
+                    <p>עוגת שוקולד עם 31.5% רווח, קרואסון עם 31.2%, ומאפה חמאה עם 30.8% – שווה כל שקל!</p>
+                </div>
+            </div>
         </section>
 
         <section class="section" id="trends">
             <h2>Cake Trends 🍪</h2>
-            <p>Discover the hottest cake designs and flavors! 🧁✨</p>
+            <p>רשימת העוגות הכי פופולריות בכל אזור:</p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>תל אביב</h3>
+                    <p>קרואסון מוביל עם 2,752 יחידות</p>
+                </div>
+                <div class="stat-card">
+                    <h3>חיפה</h3>
+                    <p>עוגת שוקולד תופסת חזק עם 2,318 מכירות</p>
+                </div>
+                <div class="stat-card">
+                    <h3>באר שבע</h3>
+                    <p>עוגת גבינה שולטת עם 2,052 יחידות</p>
+                </div>
+            </div>
+            <div class="sweet-ending">
+                חכו לעוד הפתעות מעניינות בעתיד באתר הכי מתוק שיש! 🎂✨
+            </div>
         </section>
 
         <section class="section" id="about">
             <h2>About Rinat 👩‍🍳</h2>
             <p>Hi, I'm Rinat! A cake lover who bakes magic and analyzes sweetness with Tableau! 🎂☕</p>
+            <div class="about-text">
+                שמטורפת על עוגות 🍰 ואוהבת גם לאפות וגם לנתח נתונים 📊. לא משנה אם אתם בעניין של מאפים מלוחים כמו מאפה חמאה 🥐 או מתוקים כמו עוגת גבינה 🍮, פה תמצאו את כל מה שטעים ומעניין! 😋✨
+            </div>
         </section>
 
         <footer>
             <p>© 2025 Rinat's Cake Paradise | Baked with ❤️ & ☕</p>
+            <p class="quote">"עוגה טובה היא הסוד לחיוך מושלם!" – רינת</p>
         </footer>
     </div>
 
