@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Its All About Rinat's CAKES! 🎂☕❤️</title>
+    <title>Rinat All About CAKES! 🎂☕❤️</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -133,6 +133,32 @@
             margin-top: 15px;
         }
 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            max-width: 30%; /* שינוי ל-30% כדי ששלוש תמונות יסתדרו יפה */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery-item p {
+            color: #ff66b2;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -175,7 +201,7 @@
             <p>Sweet Insights, Freshly Baked! ☕❤️</p>
             <p class="quote">"כל עוגה היא סיפור קטן של שמחה!" – רינת</p>
         </header>
-        <img src="https://images.unsplash.com/photo-1559620192-0320d3a4f9bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Stunning Cake" class="cake-image">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Stunning Cake" class="cake-image">
 
         <nav class="nav-bar">
             <a href="#dashboard">Cake Dashboard</a>
@@ -274,7 +300,21 @@
             <h2>About Rinat 👩‍🍳</h2>
             <p>Hi, I'm Rinat! A cake lover who bakes magic and analyzes sweetness with Tableau! 🎂☕</p>
             <div class="about-text">
-                 אני מטורפת על אפיה- בעיקר עוגות! 🍰. אבל בכתלס? זה לא משנה אם אתם בעניין של מאפים מלוחים כמו מאפה חמאה 🥐 או מתוקים כמו עוגת גבינה 🍮, פה תמצאו את כל מה שטעים ומעניין! 😋✨
+                  אני מטורפת על אפיה- בעיקר עוגות! 🍰. אבל בכתלס? זה לא משנה אם אתם בעניין של מאפים מלוחים כמו מאפה חמאה 🥐 או מתוקים כמו עוגת גבינה 🍮, פה תמצאו את כל מה שטעים ומעניין! 😋✨
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <p>עוגת יום הולדת מושלמת 🎉</p>
+                    <img src="https://shanybakeryonline.co.il/wp-content/uploads/2024/07/%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%A9%D7%9C-WhatsApp%E2%80%8F-2024-07-23-%D7%91%D7%A9%D7%A2%D7%94-22.17.33_6f8de0cb-1024x726.jpg" alt="Birthday Cake">
+                </div>
+                <div class="gallery-item">
+                    <p>עוגת שוקולד שכל אחד אוהב 🍫</p>
+                    <img src="https://d3o5sihylz93ps.cloudfront.net/wp-content/uploads/2019/12/18111925/IMG_7526.jpg" alt="Chocolate Cake">
+                </div>
+                <div class="gallery-item">
+                    <p>אבל הכי אני אוהבת מאפים של שישי 🥐</p>
+                    <img src="https://www.ronidany.co.il/wp-content/uploads/2022/02/mafe2.jpg" alt="Friday Pastries">
+                </div>
             </div>
         </section>
 
